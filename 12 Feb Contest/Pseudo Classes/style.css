@@ -1,0 +1,22 @@
+.pseudo{
+    background-color: blue;
+    color: white;
+}
+
+.pseudo::before{
+    content: 'A';         /* Mandatory */
+    /* display: block;
+    display: inline; */
+    display: inline-block;
+    background: red;
+    margin: 20px;
+}
+
+.pseudo::after{
+    content: 'A';         /* Mandatory */
+    /* display: block;
+    display: inline; */
+    display: inline-block;
+    background: red;
+    margin: 20px;
+}

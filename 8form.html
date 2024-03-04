@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tags</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form action="./index.html" method="POST">  <!--for another page Redirection-->
+    <!-- <form action="./form.html" method="GET"> -->
+        <!-- I cannot give "POST" Here because POST wants a request to be submitted & It will redirect to another page -->
+
+        <div>
+            <label for="username">Username*</label>
+            <input type="text" placeholder="Username" id="username" name="username">
+        </div>
+        <div>
+            <label for="branch">Branck</label>
+            <input type="text" placeholder="Branch" id="Branch" name="branch">
+        </div>
+        <div>
+            <label for="email">Email*</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date"  id="dob" name="dateofbirth">
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" value="other">
+        </div>
+        <!-- <div>
+            <label for="dsa">DSA</label>
+            <input type="checkbox" name="dsa" id="dsa">
+            <label for="frontend">FrontEnd</label>
+            <input type="checkbox" name="frontend" id="frontend">
+            <label for="backend">Backend</label>
+            <input type="checkbox" name="backend" id="backend">
+        </div> -->
+        <div>
+            <!-- Two Types of Creating Button in HTML  -->
+            <!-- <button type="submit">Submit</button> -->
+            <!-- <input type="button" value="Submit"> -->
+        </div>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit Data">  
+        <!-- for form submition input type should = submit -->
+    </form>
+</body>
+</html>

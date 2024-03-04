@@ -1,0 +1,79 @@
+.icons{
+    color: #f00;
+    font-size: 64px !important;
+}
+
+.forward{
+    font-size: 10px !important;
+}
+
+button{
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(96,113,239);
+}
+
+/* uncomment below <div> code for z-index.html */
+/* div{
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+    position: absolute;
+} */
+
+.item1{
+    background-color: blue;
+    width: 250px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.item2{
+    background-color: tomato;
+    width: 225px;
+    top: 40px;
+    left: 40px;
+    z-index: 90;
+}
+
+.item3{
+    background-color: orange;
+    top: 80px;
+    left: 80px;
+    z-index: 80; 
+}
+
+
+/*Modal */
+.modal{
+    /* width: 300px;
+    height: 100px; */
+    background-color: #7F7F7F;
+    /* padding: 20px; */
+    border-radius: 10px;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+    opacity: 0.7;
+}
+
+.inner-modal{
+    width: 250px;
+    height: 150px;
+    background-color: #fff;
+    padding: 20px;
+    opacity: 1;
+    margin: 200px auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #000;
+}

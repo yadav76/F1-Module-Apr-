@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    background-color: blue;
+    /* position: static; */
+
+    position: relative;
+    /* When Position is relative offsets are applied. But when position is relative do not apply opposite values together like do not apply top & bottom together & same for left & right. Because the one which written below wil applied */
+
+    /* top & left has highest priority */
+
+    bottom: 50px;
+    top: 100px;    /* Now I have applied both bottom and top so top written below so top applied bottom canceled */
+    left: 50px;    /* applied */
+    right: 100px;  /* Ignored */
+
+
+    top: -100px; /* moves the item top of 100px. Acts as bottom */
+    left: -50px; /* acts as right */
+
+    /* relative does not take of other elements It start overflow on other elments unlike margin which take care of other elements */
+    top: 200px;
+}
+
+/*
+Possible values of Position Attribute
+static    = Default value for Position Attribute
+relative  (We can position Elements with respsect to there original position) 
+fixed
+absolute
+sticky
+
+offsets values for Position attribute. 
+offsets are applied only when position is set to non-static.
+
+top
+bottom
+left
+right
+
+
+*/

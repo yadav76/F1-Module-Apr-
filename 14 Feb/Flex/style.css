@@ -1,0 +1,26 @@
+.container{
+    /* height: 500px; */
+    padding: 20px;
+    background-color: blue;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */ /*1st Ele start from left */
+    /* flex-direction: column-reverse;   1st Ele start from bottom */
+
+    flex-direction: row;
+    flex-wrap: wrap;   /* when items start overflow then used to align items in below row of flex container */
+
+    /* shorthand for both above properties */
+    flex-flow: row wrap;
+
+    /* justify-content: space-evenly; */
+    justify-content: space-between; /* space distributed only between elements not around the 1st & last elements */
+
+}
+
+.item{
+    padding: 30px;
+    margin: 2px;
+    background-color: orange;
+}

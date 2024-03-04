@@ -1,0 +1,28 @@
+
+.parent{
+    background-color: red;
+    padding: 40px;
+    position: relative;
+    top: 100px; 
+}
+
+.child{
+    background-color: #0f0;
+    padding: 40px;
+    position: static;
+}
+
+.test{
+    /* width: 100px;
+    height: 200px; */
+    background-color: blue;
+    color:#000;
+
+    position: absolute;  
+    top: 0;
+    left: 0;
+    /* right: 0;
+    bottom: 0; */
+    /*For position: absolute I can give all 4 Offsets. If I do not give width & height then it will act as a inline element */
+}
+/* position: absolute will make the element virtually present on screen. It will not take any space. when I apply the offsets for absolute ele then offsets are applied from top & left Line of it's  FIRST NON-STATIC ANCESTER top & left starting point Not from elements starting point */

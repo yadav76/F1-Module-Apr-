@@ -1,0 +1,84 @@
+/* .block{
+    background-color: red;
+    padding: 20px;
+    margin: 30px;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+span{
+    background-color: blue;
+    padding:100px;
+    margin: 30px;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+b{
+    background-color: orange;
+    padding: 20px;
+    margin: 30px;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px; 
+} */
+
+/* Cominators */
+
+/* to select all elements */
+/* * {
+    border: 2px solid black;
+} */
+
+/* for selecting child class inside parent class */
+.parent .child{
+    border: 2px solid red;
+}
+
+/* for selecting span inside .child class */
+/* .child span{
+    border: 2px solid blue;
+} */
+
+/* for selecting all para tags inside .parent class */
+/* .parent p{
+    background-color: orange;
+} */
+
+/* to select all para tags inside parent class */
+/* .parent p{
+    background-color: red;
+    border: 2px solid blue;
+} */
+
+
+/* for child Selectors */
+/* .parentDiv > p{
+    border: 2px solid red;
+} */
+
+/* It select direct .child class of .parentDiv class */
+.parentDiv > .child{
+    border: 2px solid red;
+}
+
+.parent + .child{
+    color: red;
+    background-color: blue;
+}
+
+/* ~ operator target all Elements after targeted element  */
+.tilda ~ p{
+    border: 2px solid red;  
+    /* this will target all <p> tags after .tilda class */
+}
+
+div > .a .b{
+    background-color: blue;
+}
+
+div > .a + span{
+    border: 5px solid green;
+}

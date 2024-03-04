@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <!-- 4 types of combinators in css -->
+    <!-- Descendent Combinator : space -->
+    <!-- child combinator : > -->
+    <!-- Sibling Combinator : ~ (tilda) -->
+    <!-- next all Siblings : + -->
+
+    <!-- <div class="parent">
+        I am div 
+        <p class="child">
+            I am para 
+            <span>I am Span</span>
+        </p>
+    </div>
+    <p>Second Para</p>
+
+    <span>Normal span</span>
+    <section class="parent">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </section> -->
+
+    <!-- We can't add one Block Level Element Inside another block Element  -->
+    <!-- Child Selectors -->
+    <!-- <div class="parentDiv">
+        <p class="child">
+            I am Child 
+            <p>I am another child</p>
+        </p>
+    </div> -->
+
+    <!-- + operator = Immediate Sibling -->
+    <p>Para 1</p>
+    <div class="parent">
+        Div Tag
+        <div class="child">
+            This is child
+            <p>Para inside child</p>
+        </div>
+        <p>para inside parent</p>
+    </div>
+    <div class="child">This is another div</div>
+    <p>This is para</p>
+    <p class="child">This is another para</p>
+
+
+    <!-- ~ Operator = all next siblings  -->
+    <div class="tilda">This is Tilda Operator</div>
+    <div>This is Div</div>
+    <p>This is para1</p>
+    <div>This is another Div</div>
+    <p>This is another para</p>
+
+
+    <!-- Complex Selectors  -->
+    <div>
+        some text
+        <div class="a">
+            Innermost div
+            <div class="b">Bold text</div>
+
+        </div>
+        <span class="b">Span text</span>
+    </div>
+
+</body>
+</html>
